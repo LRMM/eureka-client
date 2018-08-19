@@ -9,6 +9,12 @@ spring:
     admin:
       client:
         url: http://localhost:8004
+  rabbitmq:
+    host: 120.79.23.207
+    port: 5673
+    username: guest
+    password: guest
+
 
 eureka:
   client:
