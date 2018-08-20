@@ -12,8 +12,18 @@ spring:
   rabbitmq:
     host: 120.79.23.207
     port: 5673
-    username: guest
-    password: guest
+    username: liuye
+    password: liuye
+
+# 默认只暴露health 和 info 端点,下面配置展示所有
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+      health:
+        show-details: ALWAYS
 
 
 eureka:
