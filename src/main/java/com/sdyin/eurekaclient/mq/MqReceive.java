@@ -14,7 +14,8 @@ public class MqReceive {
 
     @RabbitListener(queues = MqConstant.QUEUE_NAME)
     public void rec(String s){
-        log.info("接收消息:"+s);
-        log.info("时间:"+ new Date());
+
+        System.out.println("接收消息:"+s);
+        System.out.println("时间:"+ new Date());
     }
 }

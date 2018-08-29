@@ -22,6 +22,7 @@ spring:
               enabled: true #是否开启消费者重试（为false时关闭消费者重试，这时消费端代码异常会一直重复收到消息）
               initial-interval: 4000 #重试间隔时间（单位毫秒）
           default-requeue-rejected: false #重试次数超过上面的设置之后是否丢弃（false不丢弃时需要代码实现将该消息加入死信队列）
+    publisher-confirms: true
 
 # 默认只暴露health 和 info 端点,下面配置展示所有
 management:
